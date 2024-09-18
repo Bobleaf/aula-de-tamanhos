@@ -1,31 +1,76 @@
 * {
     margin: 0;
-    padding: 0;
-    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;/*distancia entre linhas
+    */
 
 }
 
 header {
-    padding: 7vh;
+    padding: 1rem;/*padding rem para consistência com o tamanho da fonte raiz*/
     display: flex;
     background-color: rgb(77, 160, 255);
-    justify-content: space-evenly;
+    justify-content: center;
     color: white;
 }
 
-.section-1 {
-    padding: 4vh;
+main{
+    padding: 2rem;/*espaçamento interno da area principal*/
+    color: white;
 }
 
-
-
-.section-1 {
-    padding: 4vh;
-    background-color: red;
+.section {
+    padding: 2em;/*padding em, relativo ao tamanho da fonte do pai*/
+    margin-bottom: 2em;/*espaço abaixo de cada seção*/
     border-radius: 10px;
+    position:relative;/**/
 }
 
-div {
-    display: flex;
-    gap: 30px;
+.section-1{
+    background-color: red;
+    color: white;
+}
+
+.section-2{
+    background-color: chartreuse;
+    color: white;
+}
+
+.section-3{
+    background-color: orange;
+    color: white;
+}
+
+.div{
+    background-color: white;
+    color: black;
+    padding: 2rem;/*padding aumentado para maior visibilidade*/
+    margin: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;/*tamanho da fonte aumentado para maior legibilidade*/
+    box-sizing: border-box;/*inclui padding e borda no cálculo da largura*/
+}
+
+.div-1, .div-2, .div-3, .div-4, .div-5, .div-6{
+    width: calc(50% - 2rem);/*largura das caixas ajustada para caber duas por linha com espaçamento*/
+    float: left;/*trabalha com a distribuição dos elementos ...*/
+}
+
+.section::after{
+    content: "";/*adiciona um elemento invisivel apos o conteudo da seção*/
+    display: table;/*faz com que o elemento invisivel se comporte como bloco, forçando o conreiner a incluir elementos flutuantes*/
+    clear: both;/*garante que o conteiner limpe os elementos flutuantes, evitando problemas de layout*/
+}
+
+@media (min-width:1200px){
+    .div{
+        width: calc(33,333% - 2rem);/*largura de  33.333% para tres caixas por linha*/
+    }
+}
+
+@media(max-width:1200px){
+    .div{
+        width: calc(50% - 2rem);/*largura de 50% para duas caixas por linha*/
+    }
 }
