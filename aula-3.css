@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+header {
+    padding: 7vh;
+    display: flex;
+    background-color: rgb(77, 160, 255);
+    justify-content: space-evenly;
+    color: white;
+}
+
+.section-1 {
+    padding: 4vh;
+}
+
+
+
+.section-1 {
+    padding: 4vh;
+    background-color: red;
+    border-radius: 10px;
+}
+
+div {
+    display: flex;
+    gap: 30px;
+}
