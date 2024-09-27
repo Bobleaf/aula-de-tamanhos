@@ -144,11 +144,21 @@ footer div ul li{
         margin: 1em;
     }
 }
-@media(max-width:999px){
+@media(max-width:766px){
 footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
 }
+        .div-footer{
+            font-size: 25px;
+        /*ajuste o tamanho da fonte para se adequar á tela menor*/
+        line-height: 1.5;
+        /*espaçamento entre para melhor legibilidade*/
+        width: 100%;
+        /*certifique-se de ocupar toda a largura*/
+        margin: 1em;
+        }
 }
