@@ -102,7 +102,7 @@ header button {
 }
 .Card{/*aqui estamos estilizando nossa caixa onde dentro estão os conteúdos*/
     width: 200px;/*largura da caixa*/
-    height: 400px;/*altura da caixa*/
+    height: 450px;/*altura da caixa*/
     margin: 30px;/*espaçamento geral*/
     box-shadow: 20px 20px 50px black;/*sombra da caixa e cor*/
     border-radius: 10px;/*arredondamento da borda*/
