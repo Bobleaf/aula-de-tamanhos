@@ -83,6 +83,82 @@ header button {
     /*garantindo que a img se comporte como um bloco*/
 }
 
+.section-3{
+  padding: min(20vh, 6rem);;
+  background-color: #baab6a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.Container{/*elemento pai das caixas*/
+    display: flex;/*torna ele flecivel*/
+    justify-content: center;/*justifican do os items ma horisontal */
+    align-items: center;/*justifican do os items ma horisontal */
+    margin-bottom: 10rem;/*espaçamento inferior em relação a sessão*/
+    z-index: 1;/*prioridade no eixo z */
+    flex-wrap: wrap;/*habilitando a quebra de linha das caixas caso necessario*/
+    position: relative;/*posicionamento relativo*/
+}
+.Card{/*aqui estamos estilizando nossa caixa onde dentro estão os conteúdos*/
+    width: 200px;/*largura da caixa*/
+    height: 400px;/*altura da caixa*/
+    margin: 30px;/*espaçamento geral*/
+    box-shadow: 20px 20px 50px black;/*sombra da caixa e cor*/
+    border-radius: 10px;/*arredondamento da borda*/
+    background:rgba(233, 167, 223, 0.288);/*cor de fundo do elemento*/
+
+}
+
+.Content{/*caixa de conteúdo*/
+    padding: 20px;/*preenchimento interno do conteudo*/
+    text-align: center;/*alinhamento o conteudo ao centro*/
+    transform: translateY(50px);/*estabelecendo um raio de 50px de espaço no eixo*/
+    opacity: 0.2;/*20%  de opacidade*/
+    transition: 0.5s;/*aplica uma trensição no evento*/
+}
+
+.Content:hover{
+    opacity: 1;/*100% de visibilidade*/
+    transform: translateY(0px);/*aplica o retorno do conteúdo ao eixoY em 0*/
+
+}
+
+.Content h2{/*subtitulo da caixa*/
+    position: absolute;/*posicionamento absoluto em relação ao pai*/
+    right: 30px;/*jogando ele 30px a direita*/
+    font-size: 5rem;/*tamanho de letra*/
+    color: rgba(128, 128, 128, 0.459);/*cor da letra-deixar no transparente*/
+    
+}
+
+.Content h3{/*segundo subtitulo da caixa*/
+    font-size: 1.8rem;/*tamanho da letra*/
+    color: white;/*cor da letra*/
+    z-index: 1;/*prioridade no eixo z*/
+
+}
+
+.Content p{/*paragrafo da caixa*/
+    font-size: 0.8rem;/*tamanho da letra*/
+    color: white;/*cor da letra*/
+    font-weight: 300;/*peso da fonte*/
+    margin-top: 4rem;/*espaçamento superior*/
+}
+
+.Content a{/*botão ancorado da caixa*/
+    padding: 8px 20px;/*preenchimento eixo x e y*/
+    background-color: white;/*cor fundo*/
+    color: black;/*cor letra*/
+    text-decoration: none;/*removendo o sublinhado*/
+    border-radius: 15px;/*arrendondamento da borda*/
+    font-weight: 500;/*peso da fonte*/
+    margin-top: 2.7rem;/*espaçamento superior*/
+    box-shadow: 0 5px 15px black;/*sombra caixa*/
+    display: flex;/*comportamento do botão em linha e sempre em bloco*/
+    position: relative;/*posicionamento relativo*/
+}
+
 footer {
     background-color: bisque;
     width: 100%;
